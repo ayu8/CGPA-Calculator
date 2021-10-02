@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA</title>
+    <link rel="stylesheet" href="cgpa.css">
+</head>
+<body>
+
+    <h2>CGPA Calculator</h2>
+
+    <br>
+
+    <p>Enter number of courses:
+    <select id="courses_drop_down">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+    </select>
+    <input id="submit" type="submit">
+    </p>
+
+    <div class="main_table">
+        <p>Enter course-wise details</p>
+        <div id="inner_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Credits</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="use_js">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <p id="submit_button"></p>
+
+    <div>
+        <p id="show_result">
+            
+        </p>
+    </div>
+
+    <script src="cgpa.js"></script>
+</body>
+</html>
