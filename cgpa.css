@@ -1,0 +1,19 @@
+th,
+input[type="number"],
+input[type="text"] {
+    padding: 10px;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 5px;
+    
+}
+
+h2 {
+    text-align: center;
+    text-shadow: brown;
+    color: rgba(134, 24, 24, 0.863);
+}
+
+select {
+    padding: 3px;
+}
