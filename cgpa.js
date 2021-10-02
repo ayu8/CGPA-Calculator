@@ -1,6 +1,8 @@
 var nrows = 0;
 
 document.getElementById("submit").onclick = function() {
+
+    document.getElementById("show_result").innerHTML = "";
     var selectField = document.getElementById("courses_drop_down");
     var selected = selectField.options.selectedIndex;
     var selectedValue = selectField.options[selected];
@@ -27,11 +29,11 @@ document.getElementById("submit_button").onclick = function() {
 
     for (var i=0; i<nrows; i++) {
         creditsTotal += parseInt(creditArray[i].value);
-        gradePoints += parseInt(gradeArray[i].value)*parseInt(creditArray[i].value);
+        gradePoints += parseFloat(gradeArray[i].value)*parseInt(creditArray[i].value);
     }
 
     var res = gradePoints/creditsTotal;
     
-    document.getElementById("show_result").innerHTML = "Your GPA comes out to be: " + res;
-    alert("Your GPA comes out to be: " + res);
+    document.getElementById("show_result").innerHTML = "Your GPA comes out to be: " + res.toFixed(2);
+    alert("Your GPA comes out to be: " + res.toFixed(2));
 }
