@@ -5,12 +5,14 @@ document.getElementById("gpa_cal").onclick = function() {
     var tableElement = document.getElementById("use_js");
     tableElement.innerHTML = "";
     document.getElementById("show_result").innerHTML = "";
+    document.getElementById("table_heading").innerHTML = "";
 
     document.getElementById("choose_dropdown").innerHTML = "<p>Enter number of courses: <select id='courses_drop_down'> <option value='2'>2</option> <option value='3'>3</option> <option value='4'>4</option> <option value='5'>5</option> <option value='6'>6</option> <option value='7'>7</option> <option value='8'>8</option> </select> <input id='submit' type='submit'> </p>"
 
     document.getElementById("submit").onclick = function() {
 
         document.getElementById("show_result").innerHTML = "";
+        document.getElementById("table_heading").innerHTML = "<th>Course</th> <th>Credits</th> <th>Grade Points</th>";
         var selectField = document.getElementById("courses_drop_down");
         var selected = selectField.options.selectedIndex;
         var selectedValue = selectField.options[selected];
@@ -48,12 +50,15 @@ document.getElementById("cgpa_cal").onclick = function() {
     var tableElement = document.getElementById("use_js");
     tableElement.innerHTML = "";
     document.getElementById("show_result").innerHTML = "";
+    document.getElementById("table_heading").innerHTML = "";
 
     document.getElementById("choose_dropdown").innerHTML = "<p>Enter number of semesters: <select id='courses_drop_down'> <option value='2'>2</option> <option value='3'>3</option> <option value='4'>4</option> <option value='5'>5</option> <option value='6'>6</option> <option value='7'>7</option> <option value='8'>8</option> </select> <input id='submit' type='submit'> </p>";
 
     document.getElementById("submit").onclick = function() {
 
         document.getElementById("show_result").innerHTML = "";
+
+        document.getElementById("table_heading").innerHTML = "<th>Semester</th> <th>Credits</th> <th>GPA</th>";
         var selectField = document.getElementById("courses_drop_down");
         var selected = selectField.options.selectedIndex;
         var selectedValue = selectField.options[selected];
@@ -81,7 +86,7 @@ document.getElementById("cgpa_cal").onclick = function() {
         }
 
         var res = gradePoints/creditsTotal;
-        document.getElementById("show_result").innerHTML = "Your GPA comes out to be: " + res.toFixed(2);
+        document.getElementById("show_result").innerHTML = "Your CGPA comes out to be: " + res.toFixed(2);
         alert("Your CGPA comes out to be: " + res.toFixed(2));
     }
 }
