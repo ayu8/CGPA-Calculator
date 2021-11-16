@@ -12,7 +12,7 @@ document.getElementById("gpa_cal").onclick = function() {
     document.getElementById("submit").onclick = function() {
 
         document.getElementById("show_result").innerHTML = "";
-        document.getElementById("table_heading").innerHTML = "<th>Course</th> <th>Credits</th> <th>Grade Points</th>";
+        document.getElementById("table_heading").innerHTML = "<th>Course</th> <th>Credits</th> <th>Grades</th>";
         var selectField = document.getElementById("courses_drop_down");
         var selected = selectField.options.selectedIndex;
         var selectedValue = selectField.options[selected];
