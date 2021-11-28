@@ -6,59 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGPA</title>
     <link rel="stylesheet" href="cgpa.css">
+    <link rel="shortcut icon" href="favicon/grade.png" type="image/x-icon">
 </head>
+
 <body>
 
-    <h2 class="top-heading">CGPA Calculator</h2>
+    <main>
 
-    <div class="container">
+        <h2 class="top-heading">CGPA Calculator</h2>
 
-        <div class="starter">
-            <p> What do you want to calculate ?</p>
-            <div>
-                <button type="button" class="buttons" id="gpa_cal">GPA</button>
-                <button type="button" class="buttons" id="cgpa_cal">CGPA</button>
+        <div class="container">
+
+            <div class="starter">
+                <p> What do you want to calculate ?</p>
+                
+                <div>
+                    <button type="button" class="buttons gpa-cgpa-btn" id="gpa_cal">GPA</button>
+                    <button type="button" class="buttons gpa-cgpa-btn" id="cgpa_cal">CGPA</button>
+                </div>
+                
+            </div>
+
+            <div id="mini-container">
+
+                <div id="choose_dropdown">
+
+                </div>
+
+                <div class="main_table" id="main-table">                    
+                    <div id="inner_table">
+                        <table>
+                            <thead>
+                                <tr id="table_heading">
+                                    
+                                </tr>
+                            </thead>
+                            <tbody id="use_js">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <p id="submit_button"></p>
+
+                <div class="result-display" id="result-show-div">
+                    <p id="show_result">
+
+                    </p>
+                </div>
+
             </div>
             
-        </div>
-
-        <div id="mini-container">
-
-            <div id="choose_dropdown">
-
-            </div>
-
-            <div class="main_table" id="main-table">
-                <p>Enter credits and grade details</p>
-                
-                <div id="inner_table">
-                    <table>
-                        <thead>
-                            <tr id="table_heading">
-                                
-                            </tr>
-                        </thead>
-                        <tbody id="use_js">
-                            
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <p id="submit_button"></p>
-
-            <div class="result-display" id="result-show-div">
-                <p id="show_result">
-
-                </p>
-            </div>
 
         </div>
-        
-
-    </div>
-    
-    
+    </main>
+       
     <script src="cgpa.js"></script>
 </body>
 </html>
