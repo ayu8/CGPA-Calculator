@@ -50,6 +50,7 @@ body {
 .buttons {
     margin: 0 12px;
     border: 1px solid transparent;
+    cursor: pointer;
     border-radius: 6px;
     padding: 5px;
     background-color: rgb(241, 237, 231);
