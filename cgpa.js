@@ -106,6 +106,6 @@ document.getElementById("cgpa_cal").onclick = function() {
 
         var res = gradePoints/creditsTotal;
         document.getElementById("result-show-div").style.display = "block";
-        document.getElementById("show_result").innerHTML = "Your GPA comes out to be: <span id='final-val'>" + res.toFixed(2) + "</span>";
+        document.getElementById("show_result").innerHTML = "Your CGPA comes out to be: <span id='final-val'>" + res.toFixed(2) + "</span>";
     }
 }
